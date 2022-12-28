@@ -1,8 +1,8 @@
-#include<stdio.h>
+  #include<stdio.h>
 int prime(int n)
 {
     int f=0,i;
-    for(i=2;i<=n/2;i++)
+    for(i=2;i<n;i++)
     {
         if(n%i==0)
           {
@@ -17,9 +17,9 @@ int prime(int n)
 }
 int main()
 {
-    int n,d1,d2,i,t,j;
+    int n,d1,d2,i,t,k;
     scanf("%d",&t);
-    for(j=1;j<=t;j++)
+    for(k=1;k<=t;k++)
     {
     scanf("%d",&n);
     for(i=n;;i++)
@@ -49,6 +49,7 @@ int main()
     else
       printf("%d
 ",n+d1);
+    
 
     }
 return 0;
