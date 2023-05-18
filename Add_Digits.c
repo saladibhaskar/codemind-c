@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,sum=0,r;
+    int n;
     scanf("%d",&n);
     start:
-    sum=0;
-    while(n>0)
+    int r,sum=0;
+    while(n!=0)
     {
         r=n%10;
-        sum=sum+r;
+        sum+=r;
         n=n/10;
     }
     n=sum;
@@ -16,7 +16,8 @@ int main()
     {
         printf("%d",sum);
     }
-    else{
+    else
+    {
         goto start;
     }
 }
